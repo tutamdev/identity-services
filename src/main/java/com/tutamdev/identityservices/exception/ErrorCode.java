@@ -1,6 +1,7 @@
 package com.tutamdev.identityservices.exception;
 
 public enum ErrorCode {
+    UNKNOWN(999, "Khong biet fix"),
     UNCATEGORIZED_EXCEPTION(9999, "Uncategorized error"),
     INVALID_KEY(1001, "Invalid message key"),
     USER_EXISTED(1002, "User existed"),
