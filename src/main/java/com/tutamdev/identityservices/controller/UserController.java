@@ -4,6 +4,7 @@ import com.tutamdev.identityservices.dto.request.UserCreationRequest;
 import com.tutamdev.identityservices.dto.request.UserUpdateRequest;
 import com.tutamdev.identityservices.entity.User;
 import com.tutamdev.identityservices.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,12 +16,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping
-    public User createUser(@RequestBody UserCreationRequest request) {
+    @PostMapping("")
+    public User createUser(@RequestBody @Valid UserCreationRequest request) {
         return userService.createUser(request);
     }
 
-    @GetMapping
+    @GetMapping("")
     public List<User> getUsers() {
         return userService.getUsers();
     }
