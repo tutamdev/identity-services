@@ -3,6 +3,7 @@ package com.tutamdev.identityservices.controller;
 import com.tutamdev.identityservices.dto.request.ApiResponse;
 import com.tutamdev.identityservices.dto.request.UserCreationRequest;
 import com.tutamdev.identityservices.dto.request.UserUpdateRequest;
+import com.tutamdev.identityservices.dto.response.UserResponse;
 import com.tutamdev.identityservices.entity.User;
 import com.tutamdev.identityservices.service.UserService;
 import jakarta.validation.Valid;
